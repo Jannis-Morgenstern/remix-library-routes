@@ -1,0 +1,6 @@
+{
+  "root": "libs/lib2",
+  "sourceRoot": "libs/lib2/src",
+  "projectType": "library",
+  "tags": []
+}

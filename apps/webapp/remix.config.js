@@ -1,13 +1,14 @@
-const { test } = require('@acme/lib1');
-test();
+const { createRoutes: createRoutesLib2 } = require('@acme/lib2');
 
 /**
  * @type {import('@remix-run/dev').AppConfig}
  */
 module.exports = {
   ignoredRouteFiles: ['**/.*'],
-  // appDirectory: "app",
-  // assetsBuildDirectory: "public/build",
-  // serverBuildPath: "build/index.js",
-  // publicPath: "/build/",
+  routes: (defineRoutes) =>
+    defineRoutes((route) => {
+      route('some', 'some.tsx', () => {
+        createRoutesLib2(route);
+      });
+    }),
 };

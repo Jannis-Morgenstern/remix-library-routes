@@ -1,0 +1,9 @@
+{
+  "name": "@acme/lib2",
+  "version": "0.0.1",
+  "main": "./dist/index",
+  "scripts": {
+    "build": "node -r esbuild-register tools/build.ts &",
+    "routes": "node -r esbuild-register util/routes.ts"
+  }
+}

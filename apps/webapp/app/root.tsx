@@ -7,7 +7,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import { Lib1 } from '@acme/lib1';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -27,7 +26,6 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <Lib1 />
       </body>
     </html>
   );

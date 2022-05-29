@@ -1,3 +1,6 @@
+const { test } = require('@acme/lib1');
+test();
+
 /**
  * @type {import('@remix-run/dev').AppConfig}
  */
